@@ -1,0 +1,6 @@
+framework module FHSTwitterEngine {
+  umbrella header "FHSTwitterEngine-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,54 @@
+PODS:
+  - Alamofire (4.6.0)
+  - Cosmos (15.0.0)
+  - FHSTwitterEngine (2.0.6)
+  - GoogleMaps (2.6.0):
+    - GoogleMaps/Maps (= 2.6.0)
+  - GoogleMaps/Base (2.6.0)
+  - GoogleMaps/Maps (2.6.0):
+    - GoogleMaps/Base
+  - ILTranslucentView (0.1)
+  - iRate (1.12.2)
+  - KILabel (1.0.0)
+  - LPSnackbar (2.1.0)
+  - ObjectMapper (3.1.0)
+  - OhhAuth (1.0.0)
+  - SDWebImage (4.3.2):
+    - SDWebImage/Core (= 4.3.2)
+  - SDWebImage/Core (4.3.2)
+  - UITableView+FDTemplateLayoutCell (1.6)
+  - XCDYouTubeKit (2.5.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - Cosmos (~> 15.0)
+  - FHSTwitterEngine
+  - GoogleMaps
+  - ILTranslucentView
+  - iRate
+  - KILabel (= 1.0.0)
+  - LPSnackbar
+  - ObjectMapper
+  - OhhAuth
+  - SDWebImage (~> 4.0)
+  - UITableView+FDTemplateLayoutCell
+  - XCDYouTubeKit (~> 2.5)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Cosmos: a6dbd3d0baa0cc8f51f8598f7508d5a09d0a9ade
+  FHSTwitterEngine: ace2a7f57e4e0c0e4045e786d2f5a8c6bc1b8cf0
+  GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
+  ILTranslucentView: 3a0925b143854f02fa9cccf1970ecb8155e64778
+  iRate: 4fc69958788624545e5d050c8ffd20884013c3f1
+  KILabel: 84049969642d4ac1061ebe38ad4c0da37fed108b
+  LPSnackbar: 6cf30a7a567880793e3df33773ff365c8b218f04
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  OhhAuth: 82863d7a9aa2a749eb2c65551281c01f3facf501
+  SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  XCDYouTubeKit: dccfe0c17dd5c5187969ec27e93069573badb08f
+
+PODFILE CHECKSUM: 88036bb89efda558e91c73e49d4eb63cd8b62795
+
+COCOAPODS: 1.4.0

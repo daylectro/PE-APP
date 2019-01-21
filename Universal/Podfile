@@ -1,0 +1,24 @@
+project 'Universal.xcodeproj'
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Universal' do
+  use_frameworks!
+
+  pod 'Alamofire', '~> 4.5'
+  pod 'ObjectMapper'
+  pod 'SDWebImage', '~> 4.0'
+  pod 'UITableView+FDTemplateLayoutCell'
+  pod 'OhhAuth'
+  pod 'LPSnackbar'
+  pod 'ILTranslucentView'
+  pod 'Cosmos', '~> 15.0'
+  pod 'KILabel', '1.0.0'
+  pod 'iRate'
+  pod 'XCDYouTubeKit', '~> 2.5'
+  pod 'FHSTwitterEngine'
+  pod 'GoogleMaps'
+
+end
+

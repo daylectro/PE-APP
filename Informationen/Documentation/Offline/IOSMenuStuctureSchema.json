@@ -1,0 +1,292 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "title": "Menu items",
+  "description": "This list contains all menu items of your app.",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "title": "Menu item",
+    "description": "This represents 1 menu item in your app.",
+    "properties": {
+			"title": {
+				"type": "string",
+				"title": "Title",
+				"description": "Title of the menu item in your app."
+			},
+			"drawable": {
+				"type": "string",
+				"title": "Drawable",
+				"description": "Drawable/icon of the menu item in your app (must exist in resources folder!)."
+			},
+			"submenu": {
+				"type": "string",
+				"title": "Submenu schema.",
+				"description": "Optionally show below submenu header"
+			},
+			"iap": {
+				"type": "boolean",
+				"title": "In app purchases.",
+				"description": "If this item requires an in-app purchase to be opened"
+			},
+			"tabs": {
+				"type": "array",
+				"title": "Tabs.",
+				"description": "The tabs of this menu item.",
+				"minItems": 1,
+				"items": {
+				  "oneOf": [
+						{
+						  "title": "Wordpress",
+						  "description": "Show a wordpress category: Arguments: Baseurl; Category; Disqus",
+						  "properties": {
+												"provider": {
+													"enum":["wordpress"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 3
+												 }
+						  }
+						},
+						{
+						  "title": "YouTube",
+						  "description": "A youtube playlist. Arguments: ID; Type of content (either channel, playlist or live)",
+						  "properties": {
+												"provider": {
+													"enum":["youtube"]
+												},
+												"arguments": {
+													"minItems": 2,
+													"maxItems": 2
+												 }
+						  }
+						},
+						{
+						  "title": "RSS",
+						  "description": "An RSS feed. Arguments: Feed Url",
+						  "properties": {
+												"provider": {
+													"enum":["rss"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						},
+						{
+						  "title": "Facebook",
+						  "description": "A list of Facebook posts. Arguments: Facebook Page ID",
+						  "properties": {
+												"provider": {
+													"enum":["facebook"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						},
+						{
+						  "title": "Instagram",
+						  "description": "A list of Instagram posts. Arguments: Instagram username or user ID",
+						  "properties": {
+												"provider": {
+													"enum":["instagram"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						},
+						{
+						  "title": "Twitter",
+						  "description": "A twitter item. Arguments: username",
+						  "properties": {
+												"provider": {
+													"enum":["twitter"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						},
+						{
+						  "title": "WebView",
+						  "description": "A web page. Arguments: Url to load",
+						  "properties": {
+												"provider": {
+													"enum":["webview"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						},
+						{
+						  "title": "Tumblr",
+						  "description": "Tumblr user images. Arguments: Username",
+						  "properties": {
+												"provider": {
+													"enum":["tumblr"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						},
+						{
+						  "title": "Flickr",
+						  "description": "Flickr images. Arguments: ID, type of ID (either photoset or gallery)",
+						  "properties": {
+												"provider": {
+													"enum":["tumblr"]
+												},
+												"arguments": {
+													"minItems": 2,
+													"maxItems": 2
+												 }
+						  }
+						},
+						{
+						  "title": "Radio",
+						  "description": "A radio stream. Arguments: Url of the stream",
+						  "properties": {
+												"provider": {
+													"enum":["radio"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						},
+						{
+						  "title": "Video Stream",
+						  "description": "A live video/tv stream. Arguments: Url of the stream",
+						  "properties": {
+												"provider": {
+													"enum":["stream"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						},
+						{
+						  "title": "SoundCloud",
+						  "description": "A SoundCloud item. Arguments: SoundCloud user/playlist ID; Type of ID (either user or playlist)",
+						  "properties": {
+												"provider": {
+													"enum":["soundcloud"]
+												},
+												"arguments": {
+													"minItems": 2,
+													"maxItems": 2
+												 }
+						  }
+						},
+						{
+						  "title": "Pinterest",
+						  "description": "A Pinterest Item. Arguments: Pinterest Board ID",
+						  "properties": {
+												"provider": {
+													"enum":["pinterest"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						},
+						{
+						  "title": "WooCommerce",
+						  "description": "Show WooCommerce products. Arguments: Optional Category ID",
+						  "properties": {
+												"provider": {
+													"enum":["woocommerce"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						},
+						{
+						  "title": "Maps",
+						  "description": "A Maps item. Arguments: GeoJSON file in assets or url to GeoJSON file",
+						  "properties": {
+												"provider": {
+													"enum":["maps"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						},
+						{
+						  "title": "Custom Intent",
+						  "description": "A Custom Intent. Must be only tab. Arguments: The url to open.",
+						  "properties": {
+												"provider": {
+													"enum":["custom"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						},
+						{
+						  "title": "Overview",
+						  "description": "An overview screen: Arguments: The url/name of the overview's config",
+						  "properties": {
+												"provider": {
+													"enum":["overview"]
+												},
+												"arguments": {
+													"minItems": 1,
+													"maxItems": 1
+												 }
+						  }
+						}
+				  ],
+				  "properties": {
+					"title": {
+							"type": "string",
+							"title": "Title",
+							"description": "A title for this item"
+					},
+					"provider": {
+							"type": "string",
+							"readonly": true
+					},
+					"arguments": {
+							"type": "array",
+							"title": "Parameters",
+							"items": {
+								"type": "string",
+								"title": "Parameter"
+							}
+					}
+				  },
+				  "title": "Item",
+				  "required": [
+					"title", "arguments", "provider"
+				  ]
+			}
+		  }
+	},
+    "required": [
+      "title",
+      "tabs"
+    ]
+  }
+}

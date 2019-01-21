@@ -1,0 +1,62 @@
+/* 
+  Localizable.strings
+  Universal
+
+  Copyright © 2018 Sherdle. All rights reserved.
+*/
+
+"about_button" = "About";
+"about_dialog_title" = "About";
+"about_open" = "Support";
+
+"about_purchase" = "Remove Ads";
+"purchase_dialog_title" = "Unlock App";
+"purchase_dialog_restore" = "Restore Purchase";
+"purchase_dialog_text" = "Unlocking this app will remove all Banner & Intersitital advertisements from this app.";
+"purchase_dialog_text_thanks" = "Thank you for your purchase! Please restart the app for all changes to take effect.";
+"purchase_dialog_text_fail" = "Purchase failed. Please try again later.";
+"purchase_dialog_restore_fail" = "Restore failed. Please try again later.";
+"purchase_dialog_restore_thanks" = "Successfully restored purchases. Please restart the app for all changes to take effect.";
+"buy" = "Buy";
+
+"more" = "More";
+
+"ok" = "Ok";
+"retry" = "Retry";
+"error" = "Error";
+"error_webview" = "An error has occured loading this page";
+"cancel" = "Cancel";
+"open" = "Open";
+"message" = "Message";
+"loading" = "Loading";
+"loading_process" = "Loading...";
+"search" = "Search";
+"comments" = "Comments";
+
+"image_save_succesfull" = "Image saved succesfully!";
+
+"parse_incomplete_title" = "Parsing Incomplete";
+"parse_incomplete_message" = "There was an error during the parsing of this feed. Not all of the feed items could parsed.";
+"parse_incomplete_button" = "Dismiss";
+
+"soundcloud_search" = "Soundcloud Search Results";
+"play" = "Play";
+
+"written_by" = "written by %@";
+"published_on_wp" = "Published on %@ %@";
+"published_on" = "Published on %@";
+
+"items" = "Items";
+"item_one" = "One item";
+"quantity" = "Quantity";
+"cart_notification_text" = "Added to cart";
+"cart_notification_action" = "View";
+"cart_notification_out_of_stock" = "Out of stock";
+"loading_variations" = "Loading variations...";
+"choose_variations" = "Choose Option";
+"cart_empty" = "Your cart is empty.\nGo add some nice products!";
+"category" = "Category";
+"tags" = "Tags";
+"weight" = "Weight";
+"dimensions" = "Dimensions";
+"sku" = "SKU";
